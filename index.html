@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Hype to Hyper-Personalization: Implementing AI in Banking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="presentation-container">
+
+        <!-- Decoration / Background Elements -->
+        <div class="bg-gradient-orb orb-1"></div>
+        <div class="bg-gradient-orb orb-2"></div>
+        <div class="bg-grid-overlay"></div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <!-- Slide 1: Title -->
+        <section class="slide active" id="slide-1">
+            <div class="content-wrapper centered">
+                <div class="tagline">Silicon Slopes 2026</div>
+                <h1 class="main-title">From <span class="gradient-text">Hype</span> to <br> <span
+                        class="gradient-text">Hyper-Personalization</span></h1>
+                <h2 class="sub-title">Implementing AI in Banking</h2>
+                <div class="presenter-info">
+                    <p><strong>Aakash Tuli</strong></p>
+                    <p>Chief Architect and Head of Innovation</p>
+                    <p class="company">Zions Bancorporation</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2: The Challenge -->
+        <section class="slide" id="slide-2">
+            <div class="content-wrapper">
+                <h3>The Challenge</h3>
+                <div class="story-container">
+                    <div class="story-visual">
+                        <div class="email-mockup">
+                            <div class="email-header">
+                                <div class="email-dot red"></div>
+                                <div class="email-dot yellow"></div>
+                                <div class="email-dot green"></div>
+                            </div>
+                            <div class="email-content">
+                                <div class="email-subject">🏠 Ready to buy your dream home?</div>
+                                <div class="email-body">Get pre-approved for a mortgage today!</div>
+                                <div class="email-irony">
+                                    <span class="irony-badge">📍 Sent to: Customer who just closed on a home 2 weeks
+                                        ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-block">
+                        <blockquote class="story-quote">
+                            "You've just completed a six-month marathon of buying a new home with your trusted bank...
+                            Weeks later, while still unpacking boxes, you receive their marketing email..."
+                        </blockquote>
+                        <div class="problem-highlight">
+                            <div class="problem-icon">⚠️</div>
+                            <div class="problem-text">
+                                <strong>The Symptom:</strong> Marketing and Mortgage departments operating in different
+                                worlds.
+                                <br><br>
+                                <strong>The Challenge:</strong> There is a gap between how a database records you and
+                                how you actually experience life; we need to bridge that gap with genuine understanding.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: Agenda -->
+        <section class="slide" id="slide-3">
+            <div class="content-wrapper">
+                <h3>Today's Journey</h3>
+                <ul class="agenda-list">
+                    <li class="agenda-item" style="--delay: 1;">
+                        <span class="number">01</span>
+                        <div class="text">
+                            <h4>The Personalization Gap</h4>
+                            <p>Why rule-based segments are failing.</p>
+                        </div>
+                    </li>
+                    <li class="agenda-item" style="--delay: 2;">
+                        <span class="number">02</span>
+                        <div class="text">
+                            <h4>The Engines</h4>
+                            <p>Recommendations, Predictive Analytics, NLP, & GenAI.</p>
+                        </div>
+                    </li>
+                    <li class="agenda-item" style="--delay: 3;">
+                        <span class="number">03</span>
+                        <div class="text">
+                            <h4>Roadmap to Implementation</h4>
+                            <p>Modern Data Foundation, Governance & Security.</p>
+                        </div>
+                    </li>
+                    <li class="agenda-item" style="--delay: 4;">
+                        <span class="number">04</span>
+                        <div class="text">
+                            <h4>The Future</h4>
+                            <p>Rise of the AI Financial Guardian.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Slide 4: The Personalization Gap -->
+        <section class="slide" id="slide-4">
+            <div class="content-wrapper">
+                <h3>The Personalization Gap</h3>
+                <div class="two-col">
+                    <div class="text-block">
+
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-xmark fail"></i> <strong>Shallow Personalization:</strong>
+                                Rule-based segments that don't capture real-time intent.</li>
+                            <li><i class="fa-solid fa-database"></i> <strong>Data Silos:</strong> Checking, Mortgage,
+                                and Investments are disconnected islands.</li>
+                        </ul>
+                        <div class="fragment box mt-4 highlight-box">
+                            <p><strong class="highlight">The Requirement:</strong> A "Customer 360" View. Unifying data
+                                to see the person behind the account number.</p>
+                        </div>
+                    </div>
+                    <div class="visual-block centered-visual">
+                        <img src="assets/silos_user.png" alt="Data Silos" class="slide-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: The Engines of Hyper-Personalization -->
+        <section class="slide" id="slide-5">
+            <div class="content-wrapper centered">
+                <h3>The Engines of Hyper-Personalization</h3>
+                <p class="sub-text">It's not magic; it's a suite of specialized machine learning models and AI working
+                    in
+                    harmony.</p>
+                <img src="assets/ai_brain.png" alt="AI Neural Network" class="hero-image">
+                <div class="engines-grid">
+                    <div class="engine-card">
+                        <div class="icon-circle"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                        <h4>Recommendations</h4>
+                    </div>
+                    <div class="engine-card">
+                        <div class="icon-circle"><i class="fa-solid fa-chart-line"></i></div>
+                        <h4>Predictive Analytics</h4>
+                    </div>
+                    <div class="engine-card">
+                        <div class="icon-circle"><i class="fa-solid fa-comments"></i></div>
+                        <h4>NLP</h4>
+                    </div>
+                    <div class="engine-card special">
+                        <div class="icon-circle"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <h4>Generative AI</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: Engines A & B -->
+        <section class="slide" id="slide-6">
+            <div class="content-wrapper">
+                <h3>Engines: Recommendations & Predictive</h3>
+                <div class="two-col card-layout">
+                    <div class="glass-panel">
+                        <div class="panel-header">
+                            <i class="fa-solid fa-bullseye accent-icon"></i>
+                            <h4>Recommendation Engines</h4>
+                        </div>
+                        <p>Suggesting the right product at the right time.</p>
+                        <div class="example-box">
+                            <small class="label">Example</small>
+                            <div class="match-indicator">
+                                <div class="match-bar" style="--percentage: 87%"></div>
+                                <span class="match-percent">87% Match</span>
+                            </div>
+                            <p>"Based on your cash flow patterns, this business credit card could save you $2,400/year"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="glass-panel">
+                        <div class="panel-header">
+                            <i class="fa-solid fa-chart-line accent-icon"></i>
+                            <h4>Predictive Analytics</h4>
+                        </div>
+                        <p>Shifting from reactive to <strong>proactive</strong> service.</p>
+                        <div class="example-box">
+                            <small class="label">Example</small>
+                            <div class="prediction-visual">
+                                <div class="trend-line">
+                                    <svg viewBox="0 0 100 40">
+                                        <path d="M0,35 Q25,30 40,25 T60,15 T100,5" fill="none"
+                                            stroke="url(#trendGradient)" stroke-width="2" />
+                                        <defs>
+                                            <linearGradient id="trendGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" style="stop-color:#4F46E5" />
+                                                <stop offset="100%" style="stop-color:#06B6D4" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p>Tailored spending insights: "You're projected to hit your dining budget limit in 3 days."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: Engines C & D -->
+        <section class="slide" id="slide-7">
+            <div class="content-wrapper">
+                <h3>Engines: NLP & Generative AI</h3>
+                <div class="two-col card-layout">
+                    <div class="glass-panel">
+                        <div class="panel-header">
+                            <i class="fa-solid fa-ear-listen accent-icon"></i>
+                            <h4>Natural Language Processing (NLP)</h4>
+                        </div>
+                        <p>Analyzing call transcripts, emails, and logs to gauge sentiment.</p>
+                        <div class="example-box">
+                            <small class="label">Example & Impact</small>
+                            <div class="sentiment-demo">
+                                <div class="sentiment-item positive">
+                                    <span class="sentiment-label">Positive</span>
+                                    <div class="sentiment-bar" style="--width: 45%"></div>
+                                </div>
+                                <div class="sentiment-item neutral">
+                                    <span class="sentiment-label">Neutral</span>
+                                    <div class="sentiment-bar" style="--width: 35%"></div>
+                                </div>
+                                <div class="sentiment-item negative">
+                                    <span class="sentiment-label">Negative</span>
+                                    <div class="sentiment-bar" style="--width: 20%"></div>
+                                </div>
+                            </div>
+                            <p style="margin-top: 0.5rem; font-weight: 600; color: var(--text-primary);"><i
+                                    class="fa-solid fa-arrow-trend-up"
+                                    style="color: var(--accent-gold); margin-right: 0.5rem;"></i> Impact: Boosts
+                                First-Call Resolution by 23%</p>
+                        </div>
+                    </div>
+                    <div class="glass-panel highlight-panel">
+                        <div class="panel-header">
+                            <i class="fa-solid fa-robot accent-icon"></i>
+                            <h4>Generative AI</h4>
+                        </div>
+                        <p>LLMs acting as accelerators for:</p>
+                        <div class="genai-features">
+                            <div class="genai-feature">
+                                <span class="feature-dot"></span>
+                                <span>Smarter Chatbots</span>
+                            </div>
+                            <div class="genai-feature">
+                                <span class="feature-dot"></span>
+                                <span>Personalized Emails</span>
+                            </div>
+                            <div class="genai-feature">
+                                <span class="feature-dot"></span>
+                                <span>"AI Financial Coaches"</span>
+                            </div>
+                        </div>
+                        <div class="example-box" style="margin-top: 1rem;">
+                            <small class="label">Example</small>
+                            <div class="ai-coach-preview">
+                                <div class="chat-bubble assistant" style="background:var(--accent-blue); color:white;">
+                                    "Based on your goals, I recommend increasing your 401(k) contribution by 2%..."
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8: Roadmap - Foundation -->
+        <section class="slide" id="slide-8">
+            <div class="content-wrapper">
+                <h3>Roadmap: Data & AI Foundation</h3>
+                <div class="two-col">
+                    <div class="visual-block">
+                        <img src="assets/architecture.png" alt="Medallion Architecture" class="medallion-img">
+                    </div>
+                    <div class="text-block">
+                        <div class="arch-layer mesh">
+                            <h3>🕸️ Data Mesh</h3>
+                            <p>Decentralized ownership — domains own data as a "product"</p>
+                            <div class="mesh-visual">
+                                <div class="mesh-node">Lending</div>
+                                <div class="mesh-node">Deposits</div>
+                                <div class="mesh-node">Cards</div>
+                                <div class="mesh-node">Wealth</div>
+                            </div>
+                        </div>
+
+                        <div class="arch-layer api">
+                            <h3>🔗 Open Banking APIs</h3>
+                            <p>From destination → service: present wherever the customer is</p>
+                            <div class="api-flow">
+                                <span class="api-endpoint">Fintech</span>
+                                <span class="api-arrow">↔</span>
+                                <span class="api-core">Bank APIs</span>
+                                <span class="api-arrow">↔</span>
+                                <span class="api-endpoint">Partners</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Slide 9: Governance Intro -->
+        <section class="slide" id="slide-9">
+            <div class="content-wrapper centered">
+                <img src="assets/shield.svg" alt="Trust Shield" class="hero-image shield-icon">
+                <h1 class="statement-text">"You can't have AI without <span class="gradient-text">Trust</span>."</h1>
+
+                <div class="trust-pillars">
+                    <div class="pillar">
+                        <span class="pillar-icon">🔍</span>
+                        <span class="pillar-label">Explainability</span>
+                    </div>
+                    <div class="pillar">
+                        <span class="pillar-icon">⚖️</span>
+                        <span class="pillar-label">Fairness</span>
+                    </div>
+                    <div class="pillar">
+                        <span class="pillar-icon">🔒</span>
+                        <span class="pillar-label">Privacy</span>
+                    </div>
+                    <div class="pillar">
+                        <span class="pillar-icon">🛡️</span>
+                        <span class="pillar-label">Security</span>
+                    </div>
+                </div>
+
+                <p class="sub-text" style="margin-top: 2rem;">We must tackle the hard problems from Day One.</p>
+            </div>
+        </section>
+
+        <!-- Slide 10: Governance Details -->
+        <section class="slide" id="slide-10">
+            <div class="content-wrapper">
+                <h3>Governance: Explainability & Fairness</h3>
+                <div class="two-col card-layout">
+
+                    <!-- XAI Card -->
+                    <div class="glass-panel">
+                        <div class="panel-header">
+                            <i class="fa-solid fa-magnifying-glass accent-icon"></i>
+                            <h4>Explainable AI (XAI)</h4>
+                        </div>
+                        <p>Understanding <em>why</em> models make decisions. Required by regulations like GDPR/ECOA.</p>
+                        <div class="decision-tree mt-4">
+                            <div class="tree-node root">Loan Decision</div>
+                            <div class="tree-branches">
+                                <div class="tree-node factor">Credit: +0.4</div>
+                                <div class="tree-node factor">Income: +0.3</div>
+                                <div class="tree-node factor">Debt: -0.1</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAML Card -->
+                    <div class="glass-panel">
+                        <div class="panel-header">
+                            <i class="fa-solid fa-scale-balanced accent-icon"></i>
+                            <h4>Fairness-Aware ML</h4>
+                        </div>
+                        <p>Preventing bias through proactive techniques:</p>
+                        <div class="faml-techniques">
+                            <div class="technique">
+                                <span class="technique-stage">Pre-processing</span>
+                                <span class="technique-method">Reweighing data</span>
+                            </div>
+                            <div class="technique">
+                                <span class="technique-stage">In-processing</span>
+                                <span class="technique-method">Adversarial debiasing</span>
+                            </div>
+                            <div class="technique">
+                                <span class="technique-stage">Post-processing</span>
+                                <span class="technique-method">Equalized odds</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="standard-badge">
+                    <span class="badge-icon">📋</span>
+                    <span class="badge-text">Standard: Audit-ready reports + Human-in-the-Loop for critical
+                        decisions</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 11: Privacy & Security -->
+        <section class="slide" id="slide-11">
+            <div class="content-wrapper">
+                <h3>Privacy & Security</h3>
+                <div class="two-col card-layout">
+
+                    <!-- Privacy Card -->
+                    <div class="glass-panel">
+                        <div class="panel-header">
+                            <i class="fa-solid fa-user-secret accent-icon"></i>
+                            <h4>Privacy-Enhancing Tech</h4>
+                        </div>
+                        <div class="pets-list">
+                            <div class="pet-item">
+                                <div class="pet-icon">🎭</div>
+                                <div class="pet-content">
+                                    <strong>Synthetic Data</strong>
+                                    <p>Train on artificial data that preserves statistical properties</p>
+                                </div>
+                            </div>
+                            <div class="pet-item">
+                                <div class="pet-icon">🔐</div>
+                                <div class="pet-content">
+                                    <strong>Differential Privacy</strong>
+                                    <p>Add mathematical noise to protect individuals</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Security Card -->
+                    <div class="glass-panel">
+                        <div class="panel-header">
+                            <i class="fa-solid fa-lock accent-icon"></i>
+                            <h4>AI-Specific Security</h4>
+                        </div>
+                        <p>New attack vectors require new defenses:</p>
+                        <div class="security-threats">
+                            <div class="threat">
+                                <span class="threat-icon">☠️</span>
+                                <span>Data Poisoning</span>
+                            </div>
+                            <div class="threat">
+                                <span class="threat-icon">🎯</span>
+                                <span>Adversarial Attacks</span>
+                            </div>
+                            <div class="threat">
+                                <span class="threat-icon">🕵️</span>
+                                <span>Model Extraction</span>
+                            </div>
+                        </div>
+                        <div class="defense-stack">
+                            <span class="defense-label">Defense:</span>
+                            <div class="defense-items">
+                                <span class="defense-item">Zero Trust Architecture</span>
+                                <span class="defense-item">Adversarial Training</span>
+                                <span class="defense-item">Model Monitoring</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 12: The Future -->
+        <section class="slide" id="slide-12">
+            <div class="content-wrapper">
+                <h3>The Future: Hyper-Personalized Autonomous Banking</h3>
+
+                <div class="two-col">
+                    <div class="future-scenarios">
+                        <div class="scenario-card">
+                            <div class="scenario-header">
+                                <span class="scenario-icon">💡</span>
+                                <h3>Scenario 1: Smart Banking</h3>
+                            </div>
+                            <div class="scenario-content">
+                                <div class="scenario-question">
+                                    "Should I move $500 to high-yield savings or pay down my 18% APR credit card?"
+                                </div>
+                                <div class="scenario-action">
+                                    <div class="rl-diagram">
+                                        <div class="rl-step">
+                                            <span class="rl-icon">🤖</span>
+                                            <span class="rl-label">RL Agent</span>
+                                        </div>
+                                        <div class="rl-arrow">→</div>
+                                        <div class="rl-step">
+                                            <span class="rl-icon">🧪</span>
+                                            <span class="rl-label">Digital Twin</span>
+                                        </div>
+                                        <div class="rl-arrow">→</div>
+                                        <div class="rl-step result">
+                                            <span class="rl-icon">💰</span>
+                                            <span class="rl-label">$50 Saved</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="scenario-card fragment hidden">
+                            <div class="scenario-header">
+                                <span class="scenario-icon">🚗</span>
+                                <h3>Scenario 2: Life Events</h3>
+                            </div>
+                            <div class="scenario-content">
+                                <div class="scenario-question">
+                                    ML detects you might be looking for a car...
+                                </div>
+                                <div class="scenario-action">
+                                    <div class="integrated-experience">
+                                        <div class="exp-item">🚗 Car Listings</div>
+                                        <div class="exp-item">📋 Insurance Quotes</div>
+                                        <div class="exp-item">💳 Payment Plans</div>
+                                        <div class="exp-item">🤝 Negotiation</div>
+                                    </div>
+                                    <div class="exp-note">All via Open Banking APIs — one unified interface</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="visual-block centered-visual">
+                        <div class="vision-visual">
+                            <div class="agent-container">
+                                <img src="assets/guardian.png" alt="AI Financial Guardian" class="agent-avatar">
+                            </div>
+                            <div class="phone-mockup"
+                                style="margin-top: 2rem; background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1);">
+                                <div class="screen" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                    <div class="chat-bubble ai"
+                                        style="background: var(--accent-blue); padding: 0.8rem; border-radius: 12px 12px 12px 0; color: white; font-size: 0.9rem;">
+                                        Found a lower rate car loan. Save $45/mo?</div>
+                                    <div class="chat-bubble user"
+                                        style="background: rgba(255,255,255,0.1); padding: 0.8rem; border-radius: 12px 12px 0 12px; align-self: flex-end; font-size: 0.9rem;">
+                                        Yes, do it.</div>
+                                    <div class="chat-bubble ai"
+                                        style="background: var(--accent-blue); padding: 0.8rem; border-radius: 12px 12px 12px 0; color: white; font-size: 0.9rem;">
+                                        Negotiating... Done. Paperwork signed.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Slide 13: Conclusion -->
+        <section class="slide" id="slide-13">
+            <div class="content-wrapper centered">
+                <div class="big-quote">
+                    "The question is not <em class="highlight">if</em> AI will transform banking, <br>
+                    but <em class="highlight">how fast</em> institutions will invest in the foundation to make it a
+                    reality."
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 14: Q&A -->
+        <section class="slide" id="slide-14">
+            <div class="content-wrapper centered">
+                <i class="fa-regular fa-comments big-icon" style="color: var(--accent-gold); margin-bottom: 2rem;"></i>
+                <h1 class="main-title">Q&A</h1>
+                <p>Thank You</p>
+                <div class="presenter-info">
+                    <p><strong>Aakash Tuli</strong></p>
+                    <img src="assets/zions-logo.png" alt="Zions Bancorporation"
+                        style="max-width: 180px; margin-top: 1rem; background: rgba(255, 255, 255, 0.9); padding: 12px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Controls -->
+        <div class="controls">
+            <div class="control-group">
+                <button id="prevBtn" class="nav-btn" aria-label="Previous Slide"><i
+                        class="fa-solid fa-arrow-left"></i></button>
+                <span class="slide-counter" id="slideCounter">1 / 14</span>
+                <button id="nextBtn" class="nav-btn" aria-label="Next Slide"><i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

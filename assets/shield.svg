@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main Shield Body -->
+  <path d="M100 230 C 40 200, 10 150, 10 80 L 100 10 L 190 80 C 190 150, 160 200, 100 230 Z" 
+        fill="url(#shieldGrad)" fill-opacity="0.2" stroke="url(#shieldGrad)" stroke-width="2" />
+  
+  <!-- Inner Circuitry Patterns -->
+  <path d="M100 30 L 100 210 M 40 80 L 160 80 M 50 150 L 150 150" 
+        stroke="rgba(59, 130, 246, 0.5)" stroke-width="1" fill="none" />
+  
+  <circle cx="100" cy="115" r="30" fill="none" stroke="url(#goldGrad)" stroke-width="2" filter="url(#glow)">
+    <animate attributeName="r" values="30;35;30" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="stroke-opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite" />
+  </circle>
+  
+  <path d="M85 115 L 100 100 L 115 115 L 100 130 Z" fill="url(#goldGrad)" filter="url(#glow)" />
+  
+  <!-- Floating Particles -->
+  <circle cx="40" cy="60" r="2" fill="#fff" opacity="0.8">
+    <animate attributeName="cy" values="60;50;60" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="160" cy="180" r="2" fill="#fff" opacity="0.8">
+    <animate attributeName="cy" values="180;170;180" dur="5s" repeatCount="indefinite" />
+  </circle>
+</svg>
