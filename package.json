@@ -1,0 +1,23 @@
+{
+  "name": "banking-ai-presentation",
+  "version": "1.0.0",
+  "description": "Banking AI Presentation - A modern interactive web presentation",
+  "main": "script.js",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o",
+    "build": "echo 'Static site - no build needed'",
+    "build:azure": "echo 'Static site - no build needed'",
+    "serve": "npx http-server"
+  },
+  "keywords": [
+    "banking",
+    "ai",
+    "presentation",
+    "silicon-slopes"
+  ],
+  "author": "Aakash Tuli",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
